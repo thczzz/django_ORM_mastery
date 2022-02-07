@@ -78,8 +78,18 @@ def student_list_(request):
 
     return render(request, 'output.html', {'posts': posts})
 
-def student_list(request):
+def student_list_(request):
     posts = Student.objects.filter(~Q(age__gt=20) & ~Q(firstname__startswith='shaina'))
+
+    print(posts)
+    print(connection.queries)
+
+    return render(request, 'output.html', {'posts': posts})
+
+####################### SELECT & OUTPUT INDIVIDUAL FIELDS #####################
+
+def student_list(request):
+    posts = Student.objects.filter(classroom=1).only('firstname', 'surname').union(Teacher.objects.filter(firstname__startswith='trellany'))
 
     print(posts)
     print(connection.queries)
