@@ -19,7 +19,7 @@ Part 2:
  -- Concrete Table Inheritance
  -- Multi-table Inheritance
  -- Abstract Model Inheritance
- -- Polymorphic [(django-polymorphic)](https://django-polymorphic.readthedocs.io/en/stable/index.html)
+ -- Polymorphic [django-polymorphic](https://django-polymorphic.readthedocs.io/en/stable/index.html)
  
 - Multiple Database Setup
 - Transaction Atomicity
