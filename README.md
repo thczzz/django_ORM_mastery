@@ -1,7 +1,7 @@
 # django_ORM_mastery
 
-Mastering Django ORM by following [Very Acadamy's](https://www.youtube.com/c/veryacademy) - ["Django ORM Mastery Series"](https://www.youtube.com/watch?v=iQF6pln3Gog&list=PLOLrQ9Pn6cazjoDEnwzcdWWf4SNS0QZml)
-  [github](https://github.com/veryacademy/Django-ORM-Mastery-DJ003)
+Mastering Django ORM by following [Very Acadamy's](https://www.youtube.com/c/veryacademy) - ["Django ORM Mastery Series"](https://www.youtube.com/watch?v=iQF6pln3Gog&list=PLOLrQ9Pn6cazjoDEnwzcdWWf4SNS0QZml)  - 
+  [Github](https://github.com/veryacademy/Django-ORM-Mastery-DJ003)
 
 Part 1:
 ```
