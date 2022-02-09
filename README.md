@@ -11,3 +11,12 @@ Part 1:
 - SELECT & OUTPUT INDIVIDUAL FIELDS
 - Simple RAW queries
 ```
+
+Part 2:
+```
+- Inheritance Optimisation
+- Multiple Database Setup
+- Transaction Atomicity
+- Aggregation
+- Django Search
+```
