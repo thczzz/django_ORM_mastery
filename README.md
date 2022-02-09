@@ -16,6 +16,11 @@ Part 1:
 Part 2:
 ```
 - Inheritance Optimisation
+ -- Concrete Table Inheritance
+ -- Multi-table Inheritance
+ -- Abstract Models
+ -- Polymorphism
+ 
 - Multiple Database Setup
 - Transaction Atomicity
 - Aggregation
