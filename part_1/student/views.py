@@ -88,10 +88,52 @@ def student_list_(request):
 
 ####################### SELECT & OUTPUT INDIVIDUAL FIELDS #####################
 
-def student_list(request):
+
+def student_list_(request):
     posts = Student.objects.filter(classroom=1).only('firstname', 'surname').union(Teacher.objects.filter(firstname__startswith='trellany'))
 
     print(posts)
     print(connection.queries)
 
     return render(request, 'output.html', {'posts': posts})
+
+
+####################### SIMPLE RAW QUERIES #####################
+
+
+def student_list_(request):
+    posts = Student.objects.raw("SELECT * FROM student_student")
+    posts = Student.objects.raw("SELECT * FROM student_student WHERE age=21")
+
+    print(posts)
+    print(connection.queries)
+
+    return render(request, 'output.html', {'x': posts})
+
+
+####################### SIMPLE RAW QUERIES, bypassing the ORM #####################
+
+def student_list_(request):
+    cursor = connection.cursor()
+    cursor.execute("SELECT count(*) FROM student_student")
+    r = cursor.fetchone()
+    print(r)
+
+    return render(request, 'output.html', {'posts': r})
+
+
+def student_list(request):
+    cursor = connection.cursor()
+    cursor.execute("SELECT * FROM student_student WHERE age > 20")
+    r = dictfetchall(cursor)
+    print(r)
+
+    return render(request, 'output.html', {'x': r})
+
+
+def dictfetchall(cursor):
+    desc = cursor.description
+    return [
+        dict(zip([col[0] for col in desc], row))
+        for row in cursor.fetchall()
+    ]
