@@ -19,7 +19,7 @@ Part 2:
  -- Concrete Table Inheritance
  -- Multi-table Inheritance
  -- Abstract Models
- -- Polymorphism
+ -- Polymorphic
  
 - Multiple Database Setup
 - Transaction Atomicity
