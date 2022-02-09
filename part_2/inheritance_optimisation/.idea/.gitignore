@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../:\Users\artyyzz\PycharmProjects\django_ORM_mastery\part_2\inheritance_optimisation\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
