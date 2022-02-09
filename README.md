@@ -8,7 +8,7 @@ Part 1:
 - AND queries
 - UNION queries
 - NOT queries
-- SELECT & OUTPUT INDIVIDUAL FIELDS
+- SELECT & OUTPUT individual fields
 - Simple RAW queries
 ```
 
