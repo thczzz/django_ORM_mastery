@@ -101,7 +101,6 @@ class Product(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
-    # Multi-level Inheritance
     ### 12 queries in 4.00 ms with Product.objects.all()
     ### 6 queries in 2.00 ms with Product.objects.all().prefetch_related('book', 'cupboard')
     ### 4 queries in 1.00 ms with Product.objects.all().select_related('book', 'cupboard')
