@@ -24,5 +24,6 @@ Part 2:
 - Multiple Database Setup
 - Transaction Atomicity
 - Aggregation
+- Annotation (+ Subquery expressions)
 - Django Search
 ```
